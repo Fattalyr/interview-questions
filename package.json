@@ -1,0 +1,24 @@
+{
+  "name": "interview-tasks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf dist && tsc -p tsconfig.build.json",
+    "sort": "npm run build && node dist/sort.js",
+    "async": "npm run build && node dist/async-threads.js",
+    "random": "npm run build && node dist/random-array.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "17.0.8",
+    "rimraf": "3.0.2",
+    "typescript": "4.5.4"
+  },
+  "dependencies": {
+    "rxjs": "7.5.1"
+  }
+}
